@@ -26,11 +26,9 @@ const SafeArea = styled(SafeAreaView)`
 `;
 const SearchContainer = styled.View`
   padding : ${(props) => props.theme.space[3]};
-  background-color : green ;
 `;
 
 const RestaurantsListContainer = styled.View`
     flex: 1 ;
     padding: ${(props) => props.theme.space[3]} ;
-    background-color: blue;
 `;
