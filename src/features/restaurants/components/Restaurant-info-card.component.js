@@ -6,7 +6,17 @@ import styled from "styled-components/native";
 
 const Title = styled.Text`
   padding: 16px;
+  color : red;
+`;
+const RestaurantCard = styled(Card)`
+    background-color : white;
+`;
+
+const  RestaurantCardCover = styled(Card.Cover)`
+   padding :20px;
+   background-color: white;
 `
+
 
 function RestaurantInfoCard({restaurant = {}}) {
     const {
@@ -21,21 +31,13 @@ function RestaurantInfoCard({restaurant = {}}) {
         isClosedTemporarily = true,
     } = restaurant;
     return (
-        <Card elevation={5} style={styles.card}>
-        <Card.Cover key={name} styles={styles.cover} source={{ uri : photos[0]}}/>
+        <RestaurantCard elevation={5} >
+        <RestaurantCardCover key={name} source={{ uri : photos[0]}}/>
         <Title >{name}</Title>
-        </Card>
+        </RestaurantCard>
     );
 }
 
 export default RestaurantInfoCard;
 
 
-const styles = StyleSheet.create({
-    card : {
-        backgroundColor : "white",
-    } ,
-    cover : {
-        padding :20 , backgroundColor : "white",
-    },
-});
