@@ -23,7 +23,7 @@ export default RestaurantsScreen;
 
 const SafeArea = styled(SafeAreaView)`
    flex: 1;
-   margin-top: ${StatusBar.currentHeight}px ;
+  ${StatusBar.currentHeight && ` margin-top: ${StatusBar.currentHeight}px `} ;
 `;
 const SearchContainer = styled.View`
   padding : 16px ;
