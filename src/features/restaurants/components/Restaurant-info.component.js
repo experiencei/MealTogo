@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from "react";
-import { Text } from "react-native";
+import { Text , StyleSheet } from "react-native";
+import { Card } from "react-native-paper";
 
 function RestaurantInfo({restaurant = {}}) {
     const {
@@ -15,8 +16,21 @@ function RestaurantInfo({restaurant = {}}) {
         isClosedTemporarily = true,
     } = restaurant;
     return (
+        <Card elevation={5} style={styles.card}>
+        <Card.Cover key={name} styles={styles.cover} source={{ uri : photos[0]}}/>
         <Text>{name}</Text>
+        </Card>
     );
 }
 
 export default RestaurantInfo;
+
+
+const styles = StyleSheet.create({
+    card : {
+        backgroundColor : "white",
+    } ,
+    cover : {
+        padding :20 , backgroundColor : "white",
+    },
+});
