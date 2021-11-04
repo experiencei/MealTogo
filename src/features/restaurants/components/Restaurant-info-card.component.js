@@ -23,7 +23,7 @@ function RestaurantInfoCard({restaurant = {}}) {
     return (
         <Card elevation={5} style={styles.card}>
         <Card.Cover key={name} styles={styles.cover} source={{ uri : photos[0]}}/>
-        <Text style={styles.title}>{name}</Text>
+        <Title >{name}</Title>
         </Card>
     );
 }
@@ -37,8 +37,5 @@ const styles = StyleSheet.create({
     } ,
     cover : {
         padding :20 , backgroundColor : "white",
-    },
-    title : {
-        padding :16, 
     },
 });
