@@ -2,7 +2,7 @@
 import React from "react";
 import { Text } from "react-native";
 
-function RestaurantInfo({restaurant}) {
+function RestaurantInfo({restaurant = {}}) {
     const {
         name = "Some Restaurant",
         icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
@@ -15,7 +15,7 @@ function RestaurantInfo({restaurant}) {
         isClosedTemporarily = true,
     } = restaurant;
     return (
-        <Text> RestaurantInfo </Text>
+        <Text>{name}</Text>
     );
 }
 
