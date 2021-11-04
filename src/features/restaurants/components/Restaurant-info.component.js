@@ -2,7 +2,15 @@
 import React from "react";
 import { Text } from "react-native";
 
-function RestaurantInfo() {
+function RestaurantInfo({restaurant}) {
+    const {
+        name ,
+        icon ,
+        photos ,
+        address ,
+        openingHours ,
+        isClosedTemporarily
+    } = restaurant;
     return (
         <Text> RestaurantInfo </Text>
     );
