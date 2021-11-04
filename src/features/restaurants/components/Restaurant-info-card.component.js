@@ -3,7 +3,7 @@ import React from "react";
 import { Text , StyleSheet } from "react-native";
 import { Card } from "react-native-paper";
 
-function RestaurantInfo({restaurant = {}}) {
+function RestaurantInfoCard({restaurant = {}}) {
     const {
         name = "Some Restaurant",
         icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
@@ -23,7 +23,7 @@ function RestaurantInfo({restaurant = {}}) {
     );
 }
 
-export default RestaurantInfo;
+export default RestaurantInfoCard;
 
 
 const styles = StyleSheet.create({
