@@ -2,6 +2,11 @@
 import React from "react";
 import { Text , StyleSheet } from "react-native";
 import { Card } from "react-native-paper";
+import styled from "styled-components/native";
+
+const Title = styled.Text`
+  padding: 16px;
+`
 
 function RestaurantInfoCard({restaurant = {}}) {
     const {
@@ -34,6 +39,6 @@ const styles = StyleSheet.create({
         padding :20 , backgroundColor : "white",
     },
     title : {
-        padding :16,
+        padding :16, 
     },
 });
