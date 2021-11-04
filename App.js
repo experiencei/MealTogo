@@ -1,7 +1,7 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
 import { Searchbar } from "react-native-paper";
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { StatusBar, SafeAreaView, StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
