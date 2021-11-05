@@ -3,6 +3,7 @@ import React from "react";
 import { Text , StyleSheet , View} from "react-native";
 import { SvgXml } from "react-native-svg";
 import star from "../../../../assets/star";
+import open from "../../../../assets/open";
 
 import { Card } from "react-native-paper";
 import styled from "styled-components/native";
