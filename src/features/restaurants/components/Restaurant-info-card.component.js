@@ -46,6 +46,7 @@ const SectionEnd = styled.View`
 
 const Icon = styled.Image`
   width: 15px ;
+  height: 15px;
 `
 
 function RestaurantInfoCard({restaurant = {}}) {
