@@ -11,9 +11,7 @@ function RestaurantsScreen() {
       <SearchContainer>
         <Searchbar />
       </SearchContainer>
-      <RestaurantsListContainer>
         <RestaurantInfoCard />
-      </RestaurantsListContainer>
     </SafeArea>
   );
 }
