@@ -28,6 +28,12 @@ const  RestaurantCardCover = styled(Card.Cover)`
 `
 const Info = styled.View`
    padding: ${(props) => props.theme.space[3]};
+`;
+
+const Rating = styled.View`
+   flex-direction:row;
+   padding-top: ${(props) => props.theme.space[2]};
+   padding-bottom: ${(props) => props.theme.space[2]};
 `
 
 function RestaurantInfoCard({restaurant = {}}) {
@@ -50,6 +56,7 @@ const ratingArray = Array.from(new Array(Math.floor(rating)));
         <RestaurantCardCover key={name} source={{ uri : photos[0]}}/>
         <Info>
          <Title >{name}</Title>
+         <Rating>
          {ratingArray.map((_, i) => (
          <SvgXml
                 key={`star-${placeId}-${i}`}
@@ -58,6 +65,7 @@ const ratingArray = Array.from(new Array(Math.floor(rating)));
                 height={20}
                 />
                 ))}
+         </Rating>
          <Address>{name}</Address>
         </Info>
         
