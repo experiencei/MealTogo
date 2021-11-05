@@ -34,7 +34,18 @@ const Rating = styled.View`
    flex-direction:row;
    padding-top: ${(props) => props.theme.space[2]};
    padding-bottom: ${(props) => props.theme.space[2]};
-`
+`;
+
+const Section = styled.View`
+  flex-direction: row;
+  align-items: center;
+`;
+
+const SectionEnd = styled.View`
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+`;
 
 function RestaurantInfoCard({restaurant = {}}) {
     const {
