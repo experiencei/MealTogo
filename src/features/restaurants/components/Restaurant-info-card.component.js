@@ -67,6 +67,9 @@ const ratingArray = Array.from(new Array(Math.floor(rating)));
                         />
                         ))}
             </Rating>
+            <SectionEnd>
+              {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
+            </SectionEnd>
        </Section>
          <Address>{name}</Address>
         </Info>
