@@ -5,8 +5,8 @@ import { Card } from "react-native-paper";
 import styled from "styled-components/native";
 
 const Title = styled(Text)`
-  font-family :  ${(props) => props.theme.fonts.body};
-  padding: ${(props) => props.theme.space[3]};
+  font-family :  ${(props) => props.theme.fonts.heading};
+  font-size: ${(props) => props.theme.fontSizes.body};
   color : ${(props) => props.theme.colors.bg.primary};
 `;
 const RestaurantCard = styled(Card)`
