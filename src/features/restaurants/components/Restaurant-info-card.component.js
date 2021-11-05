@@ -56,16 +56,18 @@ const ratingArray = Array.from(new Array(Math.floor(rating)));
         <RestaurantCardCover key={name} source={{ uri : photos[0]}}/>
         <Info>
          <Title >{name}</Title>
-         <Rating>
-         {ratingArray.map((_, i) => (
-         <SvgXml
-                key={`star-${placeId}-${i}`}
-                xml={star}
-                width={20}
-                height={20}
-                />
-                ))}
-         </Rating>
+         <Section>
+            <Rating>
+            {ratingArray.map((_, i) => (
+                <SvgXml
+                        key={`star-${placeId}-${i}`}
+                        xml={star}
+                        width={20}
+                        height={20}
+                        />
+                        ))}
+            </Rating>
+       </Section>
          <Address>{name}</Address>
         </Info>
         
