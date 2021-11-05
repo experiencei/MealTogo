@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/native";
 
 import { Searchbar } from "react-native-paper";
-import { StatusBar, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { StatusBar, SafeAreaView, } from "react-native";
 import RestaurantInfoCard from "../components/Restaurant-info-card.component";
 
 function RestaurantsScreen() {
@@ -28,7 +28,3 @@ const SearchContainer = styled.View`
   padding : ${(props) => props.theme.space[3]};
 `;
 
-const RestaurantsListContainer = styled.View`
-    flex: 1 ;
-    padding: ${(props) => props.theme.space[3]} ;
-`;
