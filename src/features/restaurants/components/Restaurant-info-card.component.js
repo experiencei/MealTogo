@@ -44,7 +44,7 @@ function RestaurantInfoCard({restaurant = {}}) {
         <RestaurantCardCover key={name} source={{ uri : photos[0]}}/>
         <Info>
          <Title >{name}</Title>
-         <Address> >{name}</Address>
+         <Address>{name}</Address>
         </Info>
         
         </RestaurantCard>
