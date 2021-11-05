@@ -6,6 +6,7 @@ import star from "../../../../assets/star";
 
 import { Card } from "react-native-paper";
 import styled from "styled-components/native";
+import { Spacer } from "../../../components/spacer/spacer.components";
 
 
 
@@ -79,7 +80,14 @@ const ratingArray = Array.from(new Array(Math.floor(rating)));
                         ))}
             </Rating>
             <SectionEnd>
+              { isClosedTemporarily && (
+                  <Text variant="left" size="small">
+                      CLOSED TEMPORARILY
+                  </Text>
+              )}
+              <Spacer>
               {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
+              </Spacer>
             </SectionEnd>
        </Section>
          <Address>{name}</Address>
