@@ -2,6 +2,13 @@ import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
 import { ThemeProvider } from "styled-components/native";
 
+
+
+import {
+  useFonts as useOswald,
+  Oswald_400Regular,
+} from "@expo-google-fonts/oswald";
+
 // import { theme } from "./src/infrastructure/theme";
 import RestaurantsScreen from "./src/features/restaurants/screen/Restaurants.screen";
 import { theme } from "./src/infrastructure/theme";
