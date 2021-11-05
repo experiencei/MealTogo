@@ -1,6 +1,8 @@
 /* eslint-disable prettier/prettier */
 import React from "react";
 import { Text , StyleSheet } from "react-native";
+import { SvgXml } from "react-native-svg";
+
 import { Card } from "react-native-paper";
 import styled from "styled-components/native";
 
@@ -44,6 +46,7 @@ function RestaurantInfoCard({restaurant = {}}) {
         <RestaurantCardCover key={name} source={{ uri : photos[0]}}/>
         <Info>
          <Title >{name}</Title>
+         <SvgXml />
          <Address>{name}</Address>
         </Info>
         
