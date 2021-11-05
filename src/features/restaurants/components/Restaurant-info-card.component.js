@@ -42,6 +42,9 @@ function RestaurantInfoCard({restaurant = {}}) {
         rating = 4,
         isClosedTemporarily = true,
     } = restaurant;
+  
+const ratingArray = Array.from(new Array(Math.floor(rating)));
+
     return (
         <RestaurantCard elevation={5} >
         <RestaurantCardCover key={name} source={{ uri : photos[0]}}/>
