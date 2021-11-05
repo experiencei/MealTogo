@@ -12,7 +12,7 @@ function RestaurantsScreen() {
         <Searchbar />
       </SearchContainer>
       <FlatList 
-          data={[]}
+          data={[{name : 1}, {name : 2}, {name : 1}, {name : 2}]}
           renderItem={() => <RestaurantInfoCard /> }
           keyExtractor={(item) => item.name}
           contentContainerStyle={{padding: 16}}
