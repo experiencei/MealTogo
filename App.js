@@ -19,6 +19,7 @@ import { theme } from "./src/infrastructure/theme";
 
 
 
+
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
@@ -55,7 +56,7 @@ const createScreenOptions = ({ route }) => {
        <NavigationContainer > 
           <Tab.Navigator
               screenOptions={createScreenOptions}
-              
+
               tabBarOptions={{
                 activeTintColor: 'tomato',
                 inactiveTintColor: 'gray',
