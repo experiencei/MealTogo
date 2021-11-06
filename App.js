@@ -40,7 +40,11 @@ export default function App() {
     <>
        <ThemeProvider theme={theme} >
        <NavigationContainer > 
-       
+          <Tab.Navigator>
+                <Tab.Screen  name="restaurants" component={RestaurantsScreen} />
+                <Tab.Screen />
+                <Tab.Screen />
+          </Tab.Navigator>
        </NavigationContainer>
      
       </ThemeProvider>
