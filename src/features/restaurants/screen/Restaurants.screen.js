@@ -24,6 +24,7 @@ function RestaurantsScreen() {
   const { isLoading , error , restaurants} = useContext(RestaurantsContext)
   return (
     
+    
     <SafeArea>
       {isLoading && (
       <LoadingContainer>
