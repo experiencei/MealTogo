@@ -14,6 +14,12 @@ export const LocationContextProvider = ({ children }) => {
         setKeyword(searchKeyword);
       };
 
+
+      useEffect(() => {
+        if (!keyword.length) {
+          // don't do anything
+          return;
+        }
     return (
         <LocationContext.Provider
           value={{
