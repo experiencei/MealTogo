@@ -9,6 +9,11 @@ export const LocationContextProvider = ({ children }) => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
   
+    const onSearch = (searchKeyword) => {
+        setIsLoading(true);
+        setKeyword(searchKeyword);
+      };
+
     return (
         <LocationContext.Provider
           value={{
