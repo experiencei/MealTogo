@@ -44,7 +44,6 @@ export default function App() {
               screenOptions={({ route }) => ({
           tabBarIcon: ({ color, size }) => {
             let iconName;
-
             if (route.name === 'Restaurants') {
               iconName = "md-restaurant"
             } else if (route.name === 'Settings') {
