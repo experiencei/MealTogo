@@ -47,17 +47,15 @@ const createScreenOptions = ({ route }) => {
     tabBarIcon : ({ size , color }) => (
       <Ionicons name={iconName} size={size} color={color}/>
     )
-  }
+  } 
 }
   return (
     <>
        <ThemeProvider theme={theme} >
        <NavigationContainer > 
           <Tab.Navigator
-              screenOptions={({ route }) => ({
-          tabBarIcon: ({ color, size }) => {
-           
-          },
+              screenOptions={createScreenOptions}
+          
           tabBarActiveTintColor: 'tomato',
           tabBarInactiveTintColor: 'gray',
         })}
