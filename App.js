@@ -41,7 +41,14 @@ export default function App() {
     return null;
   }
 
-
+const createScreenOptions = ({ route }) => {
+  const iconName = TAB_ICON[route.name]
+  return {
+    tabBarIcon : ({ size , color }) => (
+      <Ionicons name={iconName} size={size} color={color}/>
+    )
+  }
+}
   return (
     <>
        <ThemeProvider theme={theme} >
