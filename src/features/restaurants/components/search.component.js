@@ -10,9 +10,15 @@ const SearchContainer = styled.View`
 `;
 
 export const Search = () => {
+    
     const { keyword, search } = useContext(LocationContext);
+    const [searchKeyword, setSearchKeyword] = useState(keyword);
+
     <SearchContainer>
     
-    <Searchbar />
+    <Searchbar 
+        placeholder="Search for a location"
+
+    />
     </SearchContainer>
 }
