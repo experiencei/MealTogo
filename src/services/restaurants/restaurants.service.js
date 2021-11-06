@@ -11,4 +11,6 @@ const restaurantRequest = ( location = "37.7749295,-122.4194155") => {
     })
 }
 
-restaurantRequest()
+restaurantRequest().then((result) => {
+    console.log();
+}).catch((err) => {console.log(err);})
