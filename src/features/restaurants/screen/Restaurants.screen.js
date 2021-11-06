@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components/native";
+import { ActivityIndicator, Colors } from "react-native-paper";
+
 
 import { Searchbar } from "react-native-paper";
 import {  FlatList } from "react-native";
@@ -8,11 +10,11 @@ import RestaurantInfoCard from "../components/Restaurant-info-card.component";
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 
 function RestaurantsScreen() {
-  const restaurantContext = useContext(RestaurantsContext)
+  const { isLoading , error , restaurants} = useContext(RestaurantsContext)
   return (
     <SafeArea>
       <SearchContainer>
-      
+
         <Searchbar />
       </SearchContainer>
       <FlatList 
