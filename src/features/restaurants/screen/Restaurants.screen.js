@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components/native";
 
 import { Searchbar } from "react-native-paper";
@@ -7,6 +7,7 @@ import { SafeArea } from "../../../components/utility/safe-area.component";
 import RestaurantInfoCard from "../components/Restaurant-info-card.component";
 
 function RestaurantsScreen() {
+  const restau
   return (
     <SafeArea>
       <SearchContainer>
