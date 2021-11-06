@@ -12,6 +12,7 @@ function RestaurantsScreen() {
   return (
     <SafeArea>
       <SearchContainer>
+      
         <Searchbar />
       </SearchContainer>
       <FlatList 
