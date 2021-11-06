@@ -16,7 +16,7 @@ const Loading = styled(ActivityIndicator)`
 
 const LoadingContainer = styled.View`
    position: absolute;
-   
+
    top: 50%;
    left: 50%;
 `;
@@ -32,10 +32,7 @@ function RestaurantsScreen() {
           <Loading size={50} animating={true} color={color.blue300}/>
       </LoadingContainer>
       )}
-      <SearchContainer>
-
-        <Searchbar />
-      </SearchContainer>
+      <Search />
       <FlatList 
           data={restaurantContext.restaurant}
           renderItem={() => <RestaurantInfoCard /> }
