@@ -42,15 +42,15 @@ export default function App() {
        <NavigationContainer > 
           <Tab.Navigator
               screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
+          tabBarIcon: ({ color, size }) => {
             let iconName;
 
-            if (route.name === 'Home') {
-              iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
+            if (route.name === 'Restaurants') {
+              iconName = "md-restaurant"
             } else if (route.name === 'Settings') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
+              iconName = "md-settings";
+            } else if (route.name === 'Map') {
+              iconName = "md-map";
             }
 
             // You can return any component that you like here!
@@ -60,11 +60,10 @@ export default function App() {
           tabBarInactiveTintColor: 'gray',
         })}
           
-          
           >
-                <Tab.Screen  name="restaurants" component={RestaurantsScreen} />
-                <Tab.Screen />
-                <Tab.Screen />
+                <Tab.Screen  name="Restaurants" component={RestaurantsScreen} />
+                <Tab.Screen  name="Settings"/>
+                <Tab.Screen name="Map"/>
           </Tab.Navigator>
        </NavigationContainer>
      
