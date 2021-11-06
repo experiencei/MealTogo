@@ -56,17 +56,7 @@ const createScreenOptions = ({ route }) => {
           <Tab.Navigator
               screenOptions={({ route }) => ({
           tabBarIcon: ({ color, size }) => {
-            let iconName;
-            if (route.name === 'Restaurants') {
-              iconName = "md-restaurant"
-            } else if (route.name === 'Settings') {
-              iconName = "md-settings";
-            } else if (route.name === 'Map') {
-              iconName = "md-map";
-            }
-
-            // You can return any component that you like here!
-            return <Ionicons name={iconName} size={size} color={color} />;
+           
           },
           tabBarActiveTintColor: 'tomato',
           tabBarInactiveTintColor: 'gray',
