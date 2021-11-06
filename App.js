@@ -55,11 +55,11 @@ const createScreenOptions = ({ route }) => {
        <NavigationContainer > 
           <Tab.Navigator
               screenOptions={createScreenOptions}
-          
-          tabBarActiveTintColor: 'tomato',
-          tabBarInactiveTintColor: 'gray',
-        })}
-          
+              
+              tabBarOptions={{
+                activeTintColor: 'tomato',
+                inactiveTintColor: 'gray',
+              }}
           >
                 <Tab.Screen  name="Restaurants" component={RestaurantsScreen} />
                 <Tab.Screen  name="Settings"/>
