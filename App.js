@@ -17,6 +17,10 @@ import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 import RestaurantsScreen from "./src/features/restaurants/screen/Restaurants.screen";
 import { theme } from "./src/infrastructure/theme";
 
+
+
+const Tab = createBottomTabNavigator();
+
 export default function App() {
 
   const [oswaldLoaded] = useOswald({
@@ -35,7 +39,10 @@ export default function App() {
   return (
     <>
        <ThemeProvider theme={theme} >
-        <RestaurantsScreen />
+       <NavigationContainer > 
+       
+       </NavigationContainer>
+     
       </ThemeProvider>
       <ExpoStatusBar style="auto" />
     </>
