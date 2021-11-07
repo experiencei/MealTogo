@@ -9,6 +9,7 @@ export const RestaurantsContext = createContext({}) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  
 
   useEffect(() => {
     retrieveRestaurants()
