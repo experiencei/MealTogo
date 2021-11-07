@@ -15,20 +15,22 @@ export const Search = () => {
     const [searchKeyword, setSearchKeyword] = useState(keyword);
     
     useEffect(() => {
-        
-    })
-
-    <SearchContainer>
-    <Searchbar 
-       placeholder="Search for a location"
-        value={searchKeyword}
-        onSubmitEditing={() => {
-          search(searchKeyword);
-        }}
-        onChangeText={(text) => {
-          setSearchKeyword(text);
-        }}
-
-    />
-    </SearchContainer>
+        setSearchKeyword(keyword);
+      }, [keyword]);
+      return (
+        <SearchContainer>
+          <Searchbar
+            icon={isFavouritesToggled ? "heart" : "heart-outline"}
+            onIconPress={onFavouritesToggle}
+            placeholder="Search for a location"
+            value={searchKeyword}
+            onSubmitEditing={() => {
+              search(searchKeyword);
+            }}
+            onChangeText={(text) => {
+              setSearchKeyword(text);
+            }}
+          />
+        </SearchContainer>
+      );
 }
