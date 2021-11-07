@@ -29,6 +29,7 @@ function RestaurantInfoCard({restaurant = {}}) {
         address = "100 some random street",
         isOpenNow = true,
         rating = 4,
+        placeId,
         isClosedTemporarily = true,
     } = restaurant;
   
