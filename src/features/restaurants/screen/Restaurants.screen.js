@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styled from "styled-components/native";
 import { ActivityIndicator, Colors } from "react-native-paper";
 
-import {  FlatList, View } from "react-native";
+import {  FlatList, Pressable } from "react-native";
 import { SafeArea } from "../../../components/utility/safe-area.component";
 import RestaurantInfoCard from "../components/Restaurant-info-card.component";
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
