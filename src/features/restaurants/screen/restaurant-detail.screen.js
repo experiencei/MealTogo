@@ -11,5 +11,8 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
     left={(props) => <List.Icon {...props} icon="bread-slice" />}
     expanded={breakfastExpanded}
     onPress={() => setBreakfastExpanded(!breakfastExpanded)}
-  ></List.Accordion>
+  >
+  
+
+  </List.Accordion>
 }
