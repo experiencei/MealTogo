@@ -13,10 +13,12 @@ export const Search = () => {
 
     const { keyword, search } = useContext(LocationContext);
     const [searchKeyword, setSearchKeyword] = useState(keyword);
+    
+    useEffect(() => {
+        
+    })
 
     <SearchContainer>
-    
-    
     <Searchbar 
        placeholder="Search for a location"
         value={searchKeyword}
