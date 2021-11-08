@@ -12,6 +12,5 @@ return (
       }}
     >
         
-
     </FavouritesContext.Provider>
   );
