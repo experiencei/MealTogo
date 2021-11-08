@@ -8,5 +8,6 @@ export const MapScreen = ({ navigation }) => {
 
     const { location } = useContext(LocationContext);
 
+    
 
 }
