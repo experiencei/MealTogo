@@ -11,26 +11,7 @@ return (
         removeFromFavourites: remove,
       }}
     >
-         const saveFavourites = async (value, uid) => {
-    try {
-      const jsonValue = JSON.stringify(value);
-      await AsyncStorage.setItem(`@favourites-${uid}`, jsonValue);
-    } catch (e) {
-      console.log("error storing", e);
-    }
-  };
-
-  const loadFavourites = async (uid) => {
-    try {
-      const value = await AsyncStorage.getItem(`@favourites-${uid}`);
-      if (value !== null) {
-        setFavourites(JSON.parse(value));
-      }
-    } catch (e) {
-      console.log("error loading", e);
-    }
-  };
-
+        
 
     </FavouritesContext.Provider>
   );
