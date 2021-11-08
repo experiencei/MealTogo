@@ -23,7 +23,7 @@ import { theme } from "./src/infrastructure/theme";
 
 
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator()
 
 
 
