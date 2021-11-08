@@ -27,13 +27,11 @@ const Tab = createBottomTabNavigator()
 
 
 
-
-
 const TAB_ICON = {
   Restaurants : "md-restaurants",
   Settings : "md-settings",
   Map : "md-map",
-  
+
 }
 
 export default function App() {
