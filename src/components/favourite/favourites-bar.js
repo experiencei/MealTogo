@@ -8,3 +8,4 @@ const FavouritesWrapper = styled(Card)`
   z-index: 999;
   border-radius: 15px;
 `;
+
