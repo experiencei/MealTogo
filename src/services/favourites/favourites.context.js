@@ -11,6 +11,6 @@ return (
         removeFromFavourites: remove,
       }}
     >
-      {children}
+      
     </FavouritesContext.Provider>
   );
