@@ -10,6 +10,8 @@ return (
         addToFavourites: add,
         removeFromFavourites: remove,
       }}
+
+      
     >
       {children}
     </FavouritesContext.Provider>
