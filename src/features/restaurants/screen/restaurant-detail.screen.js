@@ -12,6 +12,7 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
     const [dinnerExpanded, setDinnerExpanded] = useState(false);
     const [drinksExpanded, setDrinksExpanded] = useState(false);
 
+    
     <SafeArea>
       <RestaurantInfoCard restaurant={restaurant} />
       <ScrollView>
@@ -21,7 +22,7 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
           expanded={breakfastExpanded}
           onPress={() => setBreakfastExpanded(!breakfastExpanded)}
         >
-        
+
           <List.Item title="Eggs Benedict" />
           <Divider />
           <List.Item title="Classic Breakfast" />
