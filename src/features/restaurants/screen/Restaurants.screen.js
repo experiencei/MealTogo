@@ -10,6 +10,7 @@ import { RestaurantsContext } from "../../../services/restaurants/restaurants.co
 import { color } from "react-native-reanimated";
 import { Search } from "../components/search.component";
 
+
 const Loading = styled(ActivityIndicator)`
    margin-left : --25px;
 `;
