@@ -17,6 +17,7 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
       <RestaurantInfoCard restaurant={restaurant} />
       <ScrollView>
         <List.Accordion
+        
           title="Breakfast"
           left={(props) => <List.Icon {...props} icon="bread-slice" />}
           expanded={breakfastExpanded}
