@@ -13,6 +13,8 @@ import { SafeArea } from "../../../components/utility/safe-area.component";
 
 
 
+
+
 export const RestaurantDetailScreen = ({ navigation, route }) => {
     const [breakfastExpanded, setBreakfastExpanded] = useState(false);
     const [lunchExpanded, setLunchExpanded] = useState(false);
