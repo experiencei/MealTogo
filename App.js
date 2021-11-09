@@ -9,6 +9,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { SafeArea } from "./src/components/utility/safe-area.component";
 
 
+
+
 import {
   useFonts as useOswald,
   Oswald_400Regular,
@@ -31,7 +33,7 @@ const Tab = createBottomTabNavigator()
 const TAB_ICON = {
   Restaurants : "md-restaurants",
   Settings : "md-settings",
-  
+
   Map : "md-map",
 
 }
