@@ -21,6 +21,7 @@ const Loading = styled(ActivityIndicator)`
 const LoadingContainer = styled.View`
    position: absolute;
 
+   
    top: 50%;
    left: 50%;
 `;
