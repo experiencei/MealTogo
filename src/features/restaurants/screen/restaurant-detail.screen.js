@@ -11,6 +11,7 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
     const [lunchExpanded, setLunchExpanded] = useState(false);
     const [dinnerExpanded, setDinnerExpanded] = useState(false);
     const [drinksExpanded, setDrinksExpanded] = useState(false);
+
     
 
 
