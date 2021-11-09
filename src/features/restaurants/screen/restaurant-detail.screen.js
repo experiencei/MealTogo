@@ -6,6 +6,8 @@ import { ScrollView } from "react-native";
 import { SafeArea } from "../../../components/utility/safe-area.component";
 
 
+
+
 export const RestaurantDetailScreen = ({ navigation, route }) => {
     const [breakfastExpanded, setBreakfastExpanded] = useState(false);
     const [lunchExpanded, setLunchExpanded] = useState(false);
@@ -13,7 +15,7 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
     const [drinksExpanded, setDrinksExpanded] = useState(false);
 
 
-    
+
 
     <SafeArea>
       <RestaurantInfoCard restaurant={restaurant} />
