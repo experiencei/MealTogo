@@ -21,6 +21,7 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
           expanded={breakfastExpanded}
           onPress={() => setBreakfastExpanded(!breakfastExpanded)}
         >
+        
           <List.Item title="Eggs Benedict" />
           <Divider />
           <List.Item title="Classic Breakfast" />
