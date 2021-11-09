@@ -13,11 +13,13 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
     const [drinksExpanded, setDrinksExpanded] = useState(false);
 
 
+    
+
     <SafeArea>
       <RestaurantInfoCard restaurant={restaurant} />
       <ScrollView>
         <List.Accordion
-        
+
           title="Breakfast"
           left={(props) => <List.Icon {...props} icon="bread-slice" />}
           expanded={breakfastExpanded}
