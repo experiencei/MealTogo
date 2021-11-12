@@ -4,6 +4,8 @@ import styled from "styled-components/native";
 
 import { ActivityIndicator, Colors } from "react-native-paper";
 
+
+
 import {  FlatList, Pressable  } from "react-native";
 
 
@@ -24,7 +26,7 @@ const LoadingContainer = styled.View`
    top: 50%;
 
 
-   
+
    left: 50%;
 `;
 
