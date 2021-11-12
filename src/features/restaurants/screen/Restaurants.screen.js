@@ -21,6 +21,7 @@ import { color } from "react-native-reanimated";
 import { Search } from "../components/search.component";
 
 
+
 const Loading = styled(ActivityIndicator)`
    margin-left : --25px;
 `;
@@ -50,7 +51,7 @@ function R  estaurantsScreen() {
           data={restaurantContext.restaurant}
           renderItem={() => <RestaurantInfoCard /> }
 
-          
+
           keyExtractor={(item) => item.name}
 
           contentContainerStyle={{padding: 16}}
