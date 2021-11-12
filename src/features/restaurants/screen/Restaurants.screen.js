@@ -21,13 +21,14 @@ const Loading = styled(ActivityIndicator)`
 
 const LoadingContainer = styled.View`
    position: absolute;
-
-
    top: 50%;
+
+
+   
    left: 50%;
 `;
 
-function RestaurantsScreen() {
+function R  estaurantsScreen() {
   const { isLoading , error , restaurants} = useContext(RestaurantsContext)
   return (
 
