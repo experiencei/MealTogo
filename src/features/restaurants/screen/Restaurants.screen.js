@@ -49,8 +49,10 @@ function R  estaurantsScreen() {
       <FlatList 
           data={restaurantContext.restaurant}
           renderItem={() => <RestaurantInfoCard /> }
-          keyExtractor={(item) => item.name}
+
           
+          keyExtractor={(item) => item.name}
+
           contentContainerStyle={{padding: 16}}
       />
         
