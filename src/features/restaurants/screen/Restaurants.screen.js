@@ -36,6 +36,7 @@ const LoadingContainer = styled.View`
 `;
 
 function R  estaurantsScreen() {
+  
   const { isLoading , error , restaurants} = useContext(RestaurantsContext)
   return (
 
