@@ -50,6 +50,7 @@ function R  estaurantsScreen() {
           data={restaurantContext.restaurant}
           renderItem={() => <RestaurantInfoCard /> }
           keyExtractor={(item) => item.name}
+          
           contentContainerStyle={{padding: 16}}
       />
         
