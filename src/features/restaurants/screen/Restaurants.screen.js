@@ -22,6 +22,9 @@ import { Search } from "../components/search.component";
 
 
 
+
+
+
 const Loading = styled(ActivityIndicator)`
    margin-left : --25px;
 `;
