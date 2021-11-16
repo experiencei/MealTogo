@@ -3,7 +3,6 @@ import styled from "styled-components/native";
 import { AntDesign } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native";
 
-
 import { FavouritesContext } from "../../services/favourites/favourites.context";
 
 const FavouriteButton = styled(TouchableOpacity)`
@@ -11,7 +10,6 @@ const FavouriteButton = styled(TouchableOpacity)`
   top: 25px;
   right: 25px;
   z-index: 9;
-  
 `;
 
 export const Favourite = ({ restaurant }) => {

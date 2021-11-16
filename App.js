@@ -3,52 +3,34 @@ import React from "react";
 import { ThemeProvider } from "styled-components/native";
 import * as firebase from "firebase";
 
-
-
-
-import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { SafeArea } from "./src/components/utility/safe-area.component";
-
-
 import {
   useFonts as useOswald,
-  Oswald_400Regular,
-  
+  Oswald_400Regular, 
 } from "@expo-google-fonts/oswald";
-
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
-// import { theme } from "./src/infrastructure/theme";
-import RestaurantsScreen from "./src/features/restaurants/screen/Restaurants.screen";
 import { theme } from "./src/infrastructure/theme";
+import { Navigation } from "./src/infrastructure/navigation";
 
- 
+import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
 
+const firebaseConfig = {
+  apiKey: "<fill in your own>",
+  authDomain: "<fill in your own>",
+  projectId: "<fill in your own>",
+  storageBucket: "<fill in your own>",
+  messagingSenderId: "<fill in your own>",
+  appId: "<fill in your own>",
+};
 
-
-
-
-
-const Tab = createBottomTabNavigator()
-
-
-
-
-const TAB_ICON = {
-  Restaurants : "md-restaurants",
-  Settings : "md-settings",
-
-  Map : "md-map",
-
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
 }
 
 export default function App() {
-
   const [oswaldLoaded] = useOswald({
     Oswald_400Regular,
   });
-
 
   const [latoLoaded] = useLato({
     Lato_400Regular,
@@ -58,32 +40,12 @@ export default function App() {
     return null;
   }
 
-const createScreenOptions = ({ route }) => {
-  const iconName = TAB_ICON[route.name]
-  return {
-    tabBarIcon : ({ size , color }) => (
-      <Ionicons name={iconName} size={size} color={color}/>
-    )
-  } 
-}
   return (
     <>
-       <ThemeProvider theme={theme} >
-       <NavigationContainer > 
-          <Tab.Navigator
-              screenOptions={createScreenOptions}
-
-              tabBarOptions={{
-                activeTintColor: 'tomato',
-                inactiveTintColor: 'gray',
-              }}
-          >
-                <Tab.Screen  name="Restaurants" component={RestaurantsScreen} />
-                <Tab.Screen  name="Settings"/>
-                <Tab.Screen name="Map"/>
-          </Tab.Navigator>
-       </NavigationContainer>
-     
+      <ThemeProvider theme={theme}>
+        <AuthenticationContextProvider>
+          <Navigation />
+        </AuthenticationContextProvider>
       </ThemeProvider>
       <ExpoStatusBar style="auto" />
     </>
