@@ -14,13 +14,14 @@ import { Navigation } from "./src/infrastructure/navigation";
 
 import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
 
+
 const firebaseConfig = {
-  apiKey: "<fill in your own>",
-  authDomain: "<fill in your own>",
-  projectId: "<fill in your own>",
-  storageBucket: "<fill in your own>",
-  messagingSenderId: "<fill in your own>",
-  appId: "<fill in your own>",
+  apiKey: "AIzaSyDss-Va7IqAmjnhPZePKuM5oQSfYnLe4-A",
+  authDomain: "mealstogo-dda1b.firebaseapp.com",
+  projectId: "mealstogo-dda1b",
+  storageBucket: "mealstogo-dda1b.appspot.com",
+  messagingSenderId: "875574585221",
+  appId: "1:875574585221:web:eae02d508ac6d56ce486ec"
 };
 
 if (!firebase.apps.length) {
