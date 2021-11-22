@@ -6,7 +6,7 @@ import * as firebase from "firebase";
 import {
   useFonts as useOswald,
   Oswald_400Regular, 
-} from "@expo-google-fonts/oswald";
+} from "@expo-google-fonts/oswald";sta
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
 import { theme } from "./src/infrastructure/theme";
